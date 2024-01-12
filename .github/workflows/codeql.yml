@@ -52,6 +52,8 @@ jobs:
 
     - name: Custom Lua Config Tracer for ASPNET MVC
       uses: felickz/codeql-tracer-netframework@main
+      with:
+        MvcBuildViews: false
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
