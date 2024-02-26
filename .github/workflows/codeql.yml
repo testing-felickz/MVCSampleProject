@@ -19,6 +19,11 @@ on:
   schedule:
     - cron: '15 22 * * 0'
 
+env:
+  CODEQL_EXTRACTOR_CSHARP_OPTION_BUILDLESS: true
+  #2.16.2 defaults to true
+  #CODEQL_EXTRACTOR_CSHARP_STANDALONE_EXTRACT_WEB_VIEWS: true
+
 jobs:
   analyze:
     name: Analyze
