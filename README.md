@@ -1,7 +1,7 @@
 # Repo to showcase ASPNET MVC with a failing MVCBuildViews scenario
 
 - intentionally introduced a bad file [BadExcludedView.cshtml](Views/BadExcludedView.cshtml) to the filesystem and excluded from the csproj
-- mvc build views still picks it up and fails when executing build target via (`/p:MvcBuildViews=true`)
+- mvc build views is [set to false](https://github.com/testing-felickz/MVCSampleProject/blob/bea1153cfba3a6248f9a401b4eebc1980ac385bb/MVCSampleProject.csproj#L18C3-L18C41) still picks it up and fails when executing [build target](https://github.com/testing-felickz/MVCSampleProject/blob/bea1153cfba3a6248f9a401b4eebc1980ac385bb/MVCSampleProject.csproj#L219C1-L221C12) via (`/p:MvcBuildViews=true`)
 ```
   MvcBuildViews:
   C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_compiler.exe -v temp -p D:\a\MVCSampleProject\MVCSampleProject 
