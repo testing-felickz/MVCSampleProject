@@ -12,3 +12,6 @@
   
   Build FAILED.
   ```
+
+# Fixes
+- Various techniques as specified in [Codeql-Troubleshooting](https://github.com/advanced-security/advanced-security-material/blob/main/troubleshooting/codeql-builds/compiled-languages-csharp.md#mvcbuildviews-target-failures) are shown in different PRs: https://github.com/testing-felickz/MVCSampleProject/pulls
